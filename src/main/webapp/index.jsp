@@ -89,12 +89,6 @@
         <input type="radio" id="mastercard" name="payment-method" value="mastercard">
         <label for="mastercard">Mastercard</label><br>
 
-        <input type="radio" id="PayPal" name="payment-method" value="PayPal">
-        <label for="mastercard">PayPal</label><br>
-
-        <input type="radio" id="Cash" name="payment-method" value="Cash">
-        <label for="mastercard">Cash</label><br>
-      
 
         <input type="submit" value="Submit">
       </form>
