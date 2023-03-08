@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Payment Page</title>
+    <style>
+      /* Add some basic styling */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      /* Style the form container */
+      .form-container {
+        background-color: #f2f2f2;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+        margin: auto;
+        width: 400px;
+      }
+
+      /* Style the form header */
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      /* Style the input fields */
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="number"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      /* Style the radio buttons */
+      input[type="radio"] {
+        margin-right: 10px;
+      }
+
+      /* Style the submit button */
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Style the error message */
+      .error {
+        color: red;
+        font-size: 14px;
+        margin-top: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Payment Page</h1>
+      <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tel">Telephone:</label>
+        <input type="tel" id="tel" name="tel" required>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+
+        <label for="payment-method">Payment Method:</label><br>
+
+        <input type="radio" id="visa" name="payment-method" value="visa" required>
+        <label for="visa">Visa</label><br>
+
+        <input type="radio" id="mastercard" name="payment-method" value="mastercard">
+        <label for="mastercard">Mastercard</label><br>
+
+        <input type="radio" id="PayPal" name="payment-method" value="PayPal">
+        <label for="mastercard">PayPal</label><br>
+
+        <input type="radio" id="Cash" name="payment-method" value="Cash">
+        <label for="mastercard">Cash</label><br>
+      
+
+        <input type="submit" value="Submit">
+      </form>
+      <div class="error"></div>
+    </div>
+  </body>
+</html>
+
