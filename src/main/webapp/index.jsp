@@ -95,6 +95,8 @@
         <input type="radio" id="mastercard" name="payment-method" value="mastercard">
         <label for="mastercard">Apply Pay</label><br>
 
+        <input type="radio" id="mastercard" name="payment-method" value="mastercard">
+        <label for="mastercard">Samsung Pay</label><br>
 
         <input type="submit" value="Submit">
       </form>
