@@ -11,7 +11,7 @@ tools {
       steps {
         sh "mvn -s pom.xml -DskipTests install"
       }
-
+    }
     stage("Test"){
       steps {
         sh "mvn -s pom.xml test"
@@ -20,4 +20,4 @@ tools {
     }
   }
 
-}
+
