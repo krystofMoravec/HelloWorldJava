@@ -17,7 +17,14 @@ tools {
         sh "mvn -s pom.xml test"
       }
     }
+  stage("Package"){
+      steps {
+        sh "mvn -s pom.xml package"
+      }
+    }
+
     }
   }
+
 
 
